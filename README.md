@@ -23,7 +23,7 @@ __JavaScript: The Good Parts__
 - сильные стороны
 - грамматика
 
-## Week #2 (in progress)
+## Week #2 
 __JavaScript: The Definitive Guide__
 - инструкции
 - объекты
@@ -32,6 +32,7 @@ __JavaScript: The Definitive Guide__
 __JavaScript: The Good Parts__
 - объекты
 - функции
+- наследование
 
 __Personal Project__
 - поиск идеи
@@ -42,3 +43,5 @@ __Homework__
 - Написать функцию конструктор, которую можно вызвать как с new, так и без new.
 - Реализовать собственный аналог Object.create().
 - Подумать, как можно реализовать «инкапсуляцию».
+
+## Week #3

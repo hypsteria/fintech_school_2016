@@ -46,6 +46,7 @@ logger('[animalProperty - доступно для записи] bob.animalProper
 
 bob.animalNotwritableProperty = 'bob-property';
 logger('[animalNotwritableProperty - только для чтения] bob.animalNotwritableProperty = \'bob-property\'; не удается переопределить собственное свойство с тем же именем\nbob.hasOwnProperty(\'animalNotwritableProperty\')', bob.hasOwnProperty('animalNotwritableProperty'));
+logger('В режиме "use strict" при потыке переопределения свойства, доступного только для чтения, мы получим ошибку \nTypeError: Cannot assign to read only property \'animalNotwritableProperty\' of object \'#<Animal>\'');
 
 logger('Чтобы определить, допускается ли расширять объект, его следует передать методу Object.isExtensible()');
 logger('Object.isExtensible(bob)', Object.isExtensible(bob));
