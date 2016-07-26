@@ -30,6 +30,8 @@ __JavaScript: The Definitive Guide__
 - массивы
 
 __JavaScript: The Good Parts__
+- объекты
+- функции
 
 __Personal Project__
 - поиск идеи

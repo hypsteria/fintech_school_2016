@@ -1,5 +1,4 @@
-// создание объектов с помощью литералов 
-// ...очевидно...
+logger('script-1.js\n-------------------------------');
 
 // функция-конструктор
 function Animal (name, years) {
@@ -26,7 +25,7 @@ var bob = new Animal('bob', 2); //Объекты, созданные с помо
 								//в качестве прототипа получают значение свойства prototype функции-конструктора.
 bob.setDescription('amazing animal');
 
-logger('Объект bob, созданный через конструктор Animal', bob);
+logger('Объект bob, созданный через конструктор new Animal (name, years)', bob);
 
 logger('Прототипом объекта, созданного с помощью оператора new, является значение свойства prototype конструктора.');
 logger('Object.getPrototypeOf(bob) === Animal.prototype', Object.getPrototypeOf(bob) === Animal.prototype);
@@ -62,7 +61,7 @@ logger('-------------------------------'); //для отступа между о
 var alex = Object.create(Animal.prototype, {name: { value: 'alex', writable: true, enumerable:false, configurable:true }});
 alex.setDescription('another amazing animal');
 
-logger('Объект alex созданный с помощью Object.create', alex);
+logger('Объект alex созданный с помощью Object.create с использованием дескрипоторов свойств', alex);
 
 logger('Возвращает массив имен собственных перечислимых свойств объекта');
 logger('Object.keys(alex)', Object.keys(alex));
@@ -84,9 +83,21 @@ logger("'name' in alex", 'name' in alex);
 logger("'years' in alex", 'years' in alex);
 logger("'animalProperty' in alex", 'animalProperty' in alex);
 
+logger('-------------------------------'); //для отступа между объектами в консоли
 
+// создание объектов с помощью литералов 
 
+var mike = {
+	name: 'mike',
+	years: 15,
+};
 
+logger('Объект mike, созданный с помощью литерала', mike);
 
+Animal.prototype.setDescription.apply(mike, ['mike is good']);
+
+logger('mike не наследуется от Animal.prototype, хотя mike не имеет метода setDescription, этот метод можно вызвать через apply');
+logger('Метод apply позволяет выбирать значение this (первый параметр), \nа так же создать массив аргументов, используемых для вызова функции (второй параметр)');
+logger('Animal.prototype.setDescription.apply(mike, [\'mike is good\']);', mike);
 
 
