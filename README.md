@@ -45,3 +45,16 @@ __Homework__
 - Подумать, как можно реализовать «инкапсуляцию».
 
 ## Week #3
+__JavaScript: The Definitive Guide__
+
+
+__JavaScript: The Good Parts__
+
+
+__Personal Project__
+
+
+__Homework__
+- Написать функцию sum, вызываемую как sum(1)(2)...(3)()
+- Написать собственный метод bind
+- Написать функцию isStrict, которая возвращает true если код выполняется в строгом режиме и false, если не в строгом.

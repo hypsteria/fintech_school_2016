@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 logger('script-2.js\n-------------------------------');
 
@@ -26,7 +26,7 @@ logger('используем метод setDescription, унаследованн
 logger('Пишем конструктор Insecta, который может вызываться как с new, так и без него');
 
 var Insecta = function(name, years, wings) {
-	if (this) {
+	if (this instanceof Insecta) {
 		this.wings = wings;
 		Animal.call(this, name, years);
 	} else {
