@@ -1,8 +1,8 @@
-isStrict(this); //false
+console.log(isStrict(this)); //false
 
 function sum(a) {
 	'use strict';
-	isStrict(this); // true
+	console.log(isStrict(this)); // true
 
 	var s = a;
 	function inner(b) {
@@ -24,12 +24,19 @@ function sum(a) {
 	return inner;
 }
 
+
+
 console.log(sum(1)(2)(3)(4));
 console.log(sum(1)(2)(3)(4) + 10); // 20
 
 function isStrict(obj) {
 	return (obj === undefined);
 }
+
+(function(){
+	'use strict';
+	console.log(isStrict(this)); // true
+}());
 
 //---
 
