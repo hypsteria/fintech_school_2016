@@ -55,6 +55,7 @@ __JavaScript: The Definitive Guide__
 - классы и модули
 
 __JavaScript: The Good Parts__
--
+- массивы
+- регулярные выражения
 
 Todo приложение, которое рассматривалось на лекции: https://github.com/AlexanderAlexeev/vanilla-js-app-VS-angular-app
