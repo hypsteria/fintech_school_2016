@@ -34,10 +34,6 @@ __JavaScript: The Good Parts__
 - функции
 - наследование
 
-__Personal Project__
-- поиск идеи
-- определения стека технологий: React.js, Node.js, Express, MongoDB (MERN stack)
-
 __Homework__
 - Создать иерархию объектов, поиграть с прототипами.
 - Написать функцию конструктор, которую можно вызвать как с new, так и без new.
@@ -46,15 +42,19 @@ __Homework__
 
 ## Week #3
 __JavaScript: The Definitive Guide__
-
-
-__JavaScript: The Good Parts__
-
-
-__Personal Project__
-
+- функции
+- классы и модули
 
 __Homework__
 - Написать функцию sum, вызываемую как sum(1)(2)...(3)()
 - Написать собственный метод bind
 - Написать функцию isStrict, которая возвращает true если код выполняется в строгом режиме и false, если не в строгом.
+
+## Week #4
+__JavaScript: The Definitive Guide__
+- классы и модули
+
+__JavaScript: The Good Parts__
+-
+
+Todo приложение, которое рассматривалось на лекции: https://github.com/AlexanderAlexeev/vanilla-js-app-VS-angular-app
