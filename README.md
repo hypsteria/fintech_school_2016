@@ -53,9 +53,22 @@ __Homework__
 ## Week #4
 __JavaScript: The Definitive Guide__
 - классы и модули
+- шаблоны и регулярные выражения
 
 __JavaScript: The Good Parts__
 - массивы
 - регулярные выражения
 
 Todo приложение, которое рассматривалось на лекции: https://github.com/AlexanderAlexeev/vanilla-js-app-VS-angular-app
+
+## Week #5
+__JavaScript: The Good Parts__
+- методы
+- стиль, прекрасные черты
+- приложения А-Д
+
+Todo приложение, которое рассматривалось на лекции. В этот раз версия на AngularJS: https://github.com/AlexanderAlexeev/vanilla-js-app-VS-angular-app
+
+## Week #6
+__Homework__ 
+Написать собственную реализацию промисов
